@@ -1,5 +1,5 @@
 ﻿using System;
-using Zadanie1Lib;
+using ZadaniaLib;
 
 namespace Zadanie1
 {

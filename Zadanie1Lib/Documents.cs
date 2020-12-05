@@ -1,4 +1,4 @@
-﻿namespace Zadanie1Lib
+﻿namespace ZadaniaLib
 {
     public interface IDocument
     {

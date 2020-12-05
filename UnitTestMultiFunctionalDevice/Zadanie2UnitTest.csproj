@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Copier\Zadanie1.csproj" />
-    <ProjectReference Include="..\Zadanie1Lib\Zadanie1Lib.csproj" />
+    <ProjectReference Include="..\Zadanie1Lib\ZadaniaLib.csproj" />
+    <ProjectReference Include="..\Zadanie2\Zadanie2.csproj" />
   </ItemGroup>
 
 </Project>
