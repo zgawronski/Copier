@@ -7,8 +7,8 @@ namespace Zadanie3
     {
         static void Main(string[] args)
         {
-            Printer printer = new Printer();
-            Scanner scanner = new Scanner();
+            //Printer printer = new Printer();
+            //Scanner scanner = new Scanner();
 
 
             Copier copier = new Copier();
@@ -20,6 +20,8 @@ namespace Zadanie3
             copier.ScanAndPrint();
 
             copier.PowerOff();
+
+            
         }
     }
 }

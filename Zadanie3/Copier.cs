@@ -47,9 +47,12 @@ namespace Zadanie3
 
         public void ScanAndPrint()
         {
-            IDocument scannedDocument;
-            Scan(out scannedDocument, IDocument.FormatType.JPG);
-            Print(scannedDocument);
+            if (state == IDevice.State.on)
+            {
+                IDocument document;
+                Scan(out document, IDocument.FormatType.JPG);
+                Print(document);
+            }
         }
 
     }
