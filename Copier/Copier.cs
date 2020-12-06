@@ -1,7 +1,7 @@
 ﻿using System;
+using ZadaniaLib;
 
-
-namespace ZadaniaLib 
+namespace Zadanie1
 {
     public class Copier : BaseDevice, IPrinter, IScanner
     {
