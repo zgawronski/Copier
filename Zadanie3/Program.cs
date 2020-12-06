@@ -7,10 +7,11 @@ namespace Zadanie3
     {
         static void Main(string[] args)
         {
-            var printer = new Printer();
-            var scanner = new Scanner();
+            Printer printer = new Printer();
+            Scanner scanner = new Scanner();
 
-            var copier = new Copier();
+
+            Copier copier = new Copier();
             copier.PowerOn();
 
             var document = new PDFDocument("xyz.pdf");
