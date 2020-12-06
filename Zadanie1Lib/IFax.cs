@@ -2,6 +2,6 @@
 {
     public interface IFax : IDevice
     {
-        void Send(IDocument document, string faxNumber);
+        void Send(in IDocument document, string faxNumber);
     }
 }

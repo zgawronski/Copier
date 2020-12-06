@@ -64,7 +64,7 @@ namespace Zadanie2
             Print(doc);
         }
 
-        public void Send(IDocument document, string faxNumber)
+        public void Send(in IDocument document, string faxNumber)
         {
             if (state == IDevice.State.on)
             {
