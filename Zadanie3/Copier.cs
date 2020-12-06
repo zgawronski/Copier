@@ -48,7 +48,7 @@ namespace Zadanie3
         public void ScanAndPrint()
         {
             IDocument scannedDocument;
-            Scan(out scannedDocument);
+            Scan(out scannedDocument, IDocument.FormatType.JPG);
             Print(scannedDocument);
         }
 

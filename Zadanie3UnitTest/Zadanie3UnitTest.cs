@@ -140,8 +140,8 @@ namespace ver1UnitTests
             currentConsoleOut.Flush();
             using (var consoleOutput = new ConsoleRedirectionToStringWriter())
             {
-                IDocument doc1 = new PDFDocument("aaa.pdf");
-                string to = "1234";
+                IDocument doc1 = new PDFDocument("xxx.pdf");
+                string to = "605666";
                 multifunctionalDevice.Send(in doc1, to);
                 Assert.IsTrue(consoleOutput.GetOutput().Contains("Fax"));
             }
@@ -158,8 +158,8 @@ namespace ver1UnitTests
             currentConsoleOut.Flush();
             using (var consoleOutput = new ConsoleRedirectionToStringWriter())
             {
-                IDocument doc1 = new PDFDocument("aaa.pdf");
-                string to = "1234";
+                IDocument doc1 = new PDFDocument("xxx.pdf");
+                string to = "605666";
                 multifunctionalDevice.Send(in doc1, to);
                 Assert.IsFalse(consoleOutput.GetOutput().Contains("Print"));
             }
@@ -263,7 +263,7 @@ namespace ver1UnitTests
             currentConsoleOut.Flush();
             using (var consoleOutput = new ConsoleRedirectionToStringWriter())
             {
-                string to = "1234";
+                string to = "605666";
                 copier.ScanAndFax(to);
                 Assert.IsTrue(consoleOutput.GetOutput().Contains("Scan"));
                 Assert.IsTrue(consoleOutput.GetOutput().Contains("Fax"));
@@ -278,11 +278,11 @@ namespace ver1UnitTests
             var copier = new MultifunctionalDevice();
             copier.PowerOn();
 
-            IDocument doc1 = new PDFDocument("aaa.pdf");
+            IDocument doc1 = new PDFDocument("xxx.pdf");
             copier.Print(in doc1);
-            IDocument doc2 = new TextDocument("aaa.txt");
+            IDocument doc2 = new TextDocument("xyz.txt");
             copier.Print(in doc2);
-            IDocument doc3 = new ImageDocument("aaa.jpg");
+            IDocument doc3 = new ImageDocument("zyx.jpg");
             copier.Print(in doc3);
 
             copier.PowerOff();
@@ -308,7 +308,7 @@ namespace ver1UnitTests
             IDocument doc2;
             copier.Scan(out doc2);
 
-            IDocument doc3 = new ImageDocument("aaa.jpg");
+            IDocument doc3 = new ImageDocument("xyz.jpg");
             copier.Print(in doc3);
 
             copier.PowerOff();
@@ -328,12 +328,12 @@ namespace ver1UnitTests
         {
             var copier = new MultifunctionalDevice();
             copier.PowerOn();
-            string to = "1234";
-            IDocument doc1 = new PDFDocument("aaa.pdf");
+            string to = "605666";
+            IDocument doc1 = new PDFDocument("xyz.pdf");
             copier.Send(in doc1, to);
-            IDocument doc2 = new TextDocument("aaa.txt");
+            IDocument doc2 = new TextDocument("zyx.txt");
             copier.Send(in doc2, to);
-            IDocument doc3 = new ImageDocument("aaa.jpg");
+            IDocument doc3 = new ImageDocument("xxx.jpg");
             copier.Send(in doc3, to);
 
             copier.PowerOff();
@@ -366,7 +366,7 @@ namespace ver1UnitTests
             copier.PowerOff();
             copier.PowerOn();
 
-            IDocument doc3 = new ImageDocument("aaa.jpg");
+            IDocument doc3 = new ImageDocument("xyz.jpg");
             copier.Print(in doc3);
 
             copier.PowerOff();

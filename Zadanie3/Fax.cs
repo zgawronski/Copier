@@ -19,7 +19,7 @@ namespace Zadanie3
             state = IDevice.State.on;
         }
 
-        public void Send(in IDocument document, string faxNumber)
+        public void Send(in IDocument document, String faxNumber)
         {
             if (GetState() == IDevice.State.on)
             {

@@ -13,10 +13,10 @@ namespace Zadanie3
             var copier = new Copier();
             copier.PowerOn();
 
-            var document = new PDFDocument("abc.pdf");
+            var document = new PDFDocument("xyz.pdf");
 
             copier.Print(document);
-            copier.ScanAndPrint(out IDocument doc, IDocument.FormatType.PDF);
+            copier.ScanAndPrint();
 
             copier.PowerOff();
         }

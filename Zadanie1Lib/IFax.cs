@@ -1,7 +1,9 @@
-﻿namespace ZadaniaLib
+﻿using System;
+
+namespace ZadaniaLib
 {
     public interface IFax : IDevice
     {
-        void Send(in IDocument document, string faxNumber);
+        void Send(in IDocument document, String faxNumber);
     }
 }

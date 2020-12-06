@@ -73,7 +73,7 @@ namespace Zadanie2
             }
         }
 
-        public void ScanAndSend(string faxNumber)
+        public void ScanAndSend(String faxNumber)
         {
             Scan(out IDocument doc);
             Send(doc, faxNumber);
